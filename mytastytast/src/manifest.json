@@ -1,0 +1,27 @@
+{
+  "name": "Tasty Taste what tasted awesome!",
+  "short_name": "TasytTaste",
+  "start_url": "/",
+  "orientation": "portrait",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "hotpink",
+  "background_color": "hotpink",
+  "icons": [{
+      "src": "icons/favicon.ico",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icons/favicon.ico",
+      "sizes": "144x144"
+    },
+    {
+      "src": "icons/favicon.ico",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/favicon.ico",
+      "sizes": "512x512"
+    }
+  ]
+}
