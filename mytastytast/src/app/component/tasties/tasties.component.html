@@ -1,0 +1,66 @@
+<form>
+  <md-card>
+    <md-card-title>Basic Information</md-card-title>
+    <md-input-container>
+      <input mdInput placeholder="Foot Name" name="name" [(ngModel)]="tasty.name">
+    </md-input-container>
+
+    <md-select placeholder="foot types" name="type" [(ngModel)]="tasty.type">
+      <md-option *ngFor="let type of types">{{ type }}</md-option>
+    </md-select>
+  </md-card>
+
+  <md-card>
+    <md-card-title>Place Information</md-card-title>
+    <md-input-container>
+      <input mdInput placeholder="Place name" name="place" [(ngModel)]="tasty.place">
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput placeholder="Address" name="address" [(ngModel)]="tasty.location.address">
+    </md-input-container>
+
+    <md-input-container>
+      <input mdInput placeholder="City" name="city" [(ngModel)]="tasty.location.city">
+    </md-input-container>
+  </md-card>
+
+
+
+
+  <md-card>
+    <md-card-title>Ratings</md-card-title>
+    <md-card-subtitle>Overall Ratings</md-card-subtitle>
+    <md-slider max="10" thumbLabel name="rating" tickInterval="1" [(ngModel)]="tasty.rating"></md-slider>
+    <md-card-subtitle>
+      <md-slide-toggle #tastingSelector (change)="tastingsRatingChecked(tastingSelector.checked)" st>Tasting Rating</md-slide-toggle>
+    </md-card-subtitle>
+
+    <section id="tasting" *ngIf="tastingSelector.checked">
+      <label for="aroma">Aroma</label>
+      <md-slider max="10" id="aroma" thumbLabel name="aromaRating" [(ngModel)]="tasty.tastingRating.aroma" tickInterval="1"></md-slider>
+      <label for="body">body</label>
+      <md-slider max="10" id="body" thumbLabel name="bodyRating" tickInterval="1" [(ngModel)]="tasty.tastingRating.body"></md-slider>
+      <label for="intensity">intensity</label>
+      <md-slider max="10" id="intensity" thumbLabel name="intensityRating" tickInterval="1" [(ngModel)]="tasty.tastingRating.intensity"></md-slider>
+      <label for="sweetness">sweetness</label>
+      <md-slider max="10" id="sweetness" thumbLabel name="sweetnessRating" tickInterval="1" [(ngModel)]="tasty.tastingRating.sweetness"></md-slider>
+      <label for="aftertaste">aftertaste</label>
+      <md-slider max="10" id="aftertaste" thumbLabel name="aftertasteRating" tickInterval="1" [(ngModel)]="tasty.tastingRating.aftertaste"></md-slider>
+    </section>
+  </md-card>
+
+
+
+  <md-card>
+    <md-input-container>
+      <textarea mdInput placeholder="Notes" name="notes" [(ngModel)]="tasty.notes">
+      </textarea>
+    </md-input-container>
+  </md-card>
+
+  <md-card>
+    <button md-raised-button (click)=cancel()>Cancel</button>
+    <button md-raised-button color="accent" (click)="save()">Save</button>
+  </md-card>
+</form>

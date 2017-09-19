@@ -1,7 +1,9 @@
-class PlaceLocation {
+export class PlaceLocation {
 
     constructor(public address: string = '',
-        city: string = '',
-        latitude: number = null,
-        longitude: number = null) { }
+        public city: string = '',
+        public latitude: number = null,
+        public longitude: number = null) {
+
+    }
 }
