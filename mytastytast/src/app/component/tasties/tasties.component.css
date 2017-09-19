@@ -1,0 +1,17 @@
+md-card {
+  margin: 20px;
+}
+
+md-input-container,
+md-select {
+  width: 100%;
+}
+
+md-slider {
+  width: 90%;
+}
+
+#tasting {
+  display: flex;
+  flex-direction: column;
+}
