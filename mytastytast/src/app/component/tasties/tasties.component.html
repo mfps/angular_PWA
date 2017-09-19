@@ -6,7 +6,7 @@
     </md-input-container>
 
     <md-select placeholder="foot types" name="type" [(ngModel)]="tasty.type">
-      <md-option *ngFor="let type of types">{{ type }}</md-option>
+      <md-option *ngFor="let type of types" [value]="type">{{ type }}</md-option>
     </md-select>
   </md-card>
 
@@ -33,7 +33,7 @@
     <md-card-subtitle>Overall Ratings</md-card-subtitle>
     <md-slider max="10" thumbLabel name="rating" tickInterval="1" [(ngModel)]="tasty.rating"></md-slider>
     <md-card-subtitle>
-      <md-slide-toggle #tastingSelector (change)="tastingsRatingChecked(tastingSelector.checked)" st>Tasting Rating</md-slide-toggle>
+      <md-slide-toggle #tastingSelector (change)="tastingsRatingChecked(tastingSelector.checked)" [checked]="tastingEnabled">Tasting Rating</md-slide-toggle>
     </md-card-subtitle>
 
     <section id="tasting" *ngIf="tastingSelector.checked">

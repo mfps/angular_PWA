@@ -2,9 +2,9 @@
   <md-card-title>{{ tasty.name }}</md-card-title>
   <md-card-subtitle>Place: {{ tasty.place }}</md-card-subtitle>
   <md-card-actions>
-    <button md-button><md-icon>map</md-icon></button>
-    <button md-button><md-icon>share</md-icon></button>
-    <button md-button><md-icon>list</md-icon></button>
+    <button md-button (click)="gotoMap(tasty)"><md-icon>map</md-icon></button>
+    <button md-button (click)="share(tasty)"><md-icon>share</md-icon></button>
+    <button md-button (click)="showDetails(tasty)"><md-icon>list</md-icon></button>
   </md-card-actions>
 </md-card>
 <a id="btn-create" md-fab routerLink="/tasty">
