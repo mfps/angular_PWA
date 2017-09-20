@@ -21,6 +21,7 @@ export class TastiesComponent implements OnInit {
 
   getGeolocation() {
     this.geolocation.requestLocation(location => {
+      console.log(location);
       if (location) {
         this.tasty.location.latitude = location.latitude;
         this.tasty.location.longitude = location.longitude;

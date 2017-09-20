@@ -9,28 +9,22 @@ export class GeolocationService {
   requestLocation(cb) {
     navigator.geolocation.getCurrentPosition(
       position => cb(position.coords),
-      error => {
-        console.log(error);
-        cb(null);
-      }
+      error => cb(error)
     );
   }
 
   getMapLink(location: PlaceLocation) {
     let query = '';
     if (location.latitude) {
-
       query = `${location.latitude},${location.longitude}`;
     } else {
-
       query = `${location.address},${location.city}`;
     }
+
     if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
-
-      return `maps.apple.com/=?q=${query}`;
+      return `maps.apple.com/?q=${query}`;
     } else {
-
-      return `maps.google.com/=?q=${query}`;
+      return `maps.google.com/?q=${query}`;
     }
   }
 

@@ -9,6 +9,7 @@ import {
   MdToolbarModule, MdCardModule, MdSlideToggleModule,
   MdSnackBarModule
 } from "@angular/material";
+import { ServiceWorkerModule } from "@angular/service-worker";
 
 import 'hammerjs';
 
@@ -35,6 +36,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     BrowserModule,
     HttpModule,
+    ServiceWorkerModule,
     FormsModule,
     BrowserAnimationsModule,
     MdButtonModule, MdIconModule, MdInputModule, MdSelectModule, MdSliderModule,
