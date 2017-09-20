@@ -6,12 +6,27 @@
   <title>Mytastytast</title>
   <base href="/">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="hotpink">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico ">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="MyCoffeeApp">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <link rel="apple-touch-icon" href="icons/favicon.ico" sizes="180x180">
+  <link rel="apple-touch-icon" href="icons/favicon.ico" sizes="120x120">
+
 </head>
 
 <body>
-  <app-root></app-root>
+  <app-root>
+    <img src="icons/favicon.ico" srcset="icons/favicon.ico 3x, icons/favicon.ico 4x" alt="App Icon" width="48" height="48">
+
+    <h1>My TastyTast App</h1>
+    <h2>Please wait...</h2>
+  </app-root>
 </body>
 
 </html>
