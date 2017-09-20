@@ -1,8 +1,4 @@
-{"name":"Gemüse Döner","place":"KaffeBar","location":{"address":"Da hinteb","city":"Belin","latitude":52.5273104,"longitude":13.3356085},"tastingRating":{},"rating":4,"_id":"Vq3KKYbIKLHCaGfJ"}
-{"name":"sdfgsdfg","place":"sdfg","location":{"address":"sdfg","city":"fg","latitude":52.527304099999995,"longitude":13.335578100000001},"tastingRating":{},"rating":3,"_id":"v1isrMCjwXjorBGe"}
-{"name":"dfg","place":"fg","location":{"address":"sdfg","city":"fg","latitude":52.5273166,"longitude":13.335595},"tastingRating":{},"rating":5,"_id":"BEf93rtCP2XE4msz"}
-{"name":"dfg","place":"sdfg","location":{"address":"sdfg","city":"fg","latitude":52.527317,"longitude":13.3355944},"tastingRating":{},"rating":3,"_id":"s8xjwAiQzZNOptJw"}
-{"name":"dfg","place":"fg","location":{"address":"sdfg","city":"fg","latitude":52.5273196,"longitude":13.335567300000001},"tastingRating":null,"rating":5,"_id":"BEf93rtCP2XE4msz"}
-{"name":"dfg","place":"fg","location":{"address":"sdfg","city":"fg","latitude":52.527319999999996,"longitude":13.3355372},"tastingRating":{"aroma":4,"body":4,"intensity":4,"sweetness":6},"rating":5,"_id":"BEf93rtCP2XE4msz"}
-{"name":"dfg","place":"fg","location":{"address":"sdfg","city":"fg","latitude":52.527311399999995,"longitude":13.335566900000002},"tastingRating":{"aroma":4,"body":4,"intensity":4,"sweetness":6},"rating":5,"_id":"BEf93rtCP2XE4msz"}
 {"name":"dfg","place":"fg","location":{"address":"sdfg","city":"fg","latitude":52.527311399999995,"longitude":13.335566900000002},"tastingRating":{"aroma":4,"body":4,"intensity":4,"sweetness":6,"aftertaste":4},"rating":5,"_id":"BEf93rtCP2XE4msz"}
+{"name":"Gemüse Döner","place":"KaffeBar","location":{"address":"Da hinteb","city":"Belin","latitude":52.5273104,"longitude":13.3356085},"tastingRating":{},"rating":4,"_id":"Vq3KKYbIKLHCaGfJ"}
+{"name":"dfg","place":"sdfg","location":{"address":"sdfg","city":"fg","latitude":52.527317,"longitude":13.3355944},"tastingRating":{},"rating":3,"_id":"s8xjwAiQzZNOptJw"}
+{"name":"sdfgsdfg","place":"sdfg","location":{"address":"sdfg","city":"fg","latitude":52.527304099999995,"longitude":13.335578100000001},"tastingRating":{},"rating":3,"_id":"v1isrMCjwXjorBGe"}

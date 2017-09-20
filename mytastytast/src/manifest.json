@@ -8,19 +8,19 @@
   "theme_color": "hotpink",
   "background_color": "hotpink",
   "icons": [{
-      "src": "icons/favicon.ico",
+      "src": "icons/icon_96x96.png",
       "sizes": "96x96"
     },
     {
-      "src": "icons/favicon.ico",
+      "src": "icons/icon_144x144.png",
       "sizes": "144x144"
     },
     {
-      "src": "icons/favicon.ico",
+      "src": "icons/icon_192x192.png",
       "sizes": "192x192"
     },
     {
-      "src": "icons/favicon.ico",
+      "src": "icons/icon_512x512.png",
       "sizes": "512x512"
     }
   ]

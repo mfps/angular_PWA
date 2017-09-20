@@ -42,8 +42,6 @@ export class TastiesComponent implements OnInit {
 
   save() {
     this.data.save(this.tasty, result => {
-
-      console.log({ result });
       if (result) {
         this.router.navigate([`/tasty/${result._id}`])
       }
