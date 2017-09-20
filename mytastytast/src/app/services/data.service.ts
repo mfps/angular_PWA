@@ -12,7 +12,7 @@ export class DataService {
   getList(cb) {
     this.http
       .get(`${this.endpoint}/tasties`)
-      .subscribe(response => { console.log(response.json()); cb(response.json()) });
+      .subscribe(response => cb(response.json()));
   }
 
   get(tastyId: string, cb) {
